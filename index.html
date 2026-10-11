@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section class="hero">
+  <div>
+    <p class="hero-eyebrow">Gameplay Programmer</p>
+    <h1>Franco Correia</h1>
+    <p class="hero-intro">I build gameplay systems in Unity and C#, from turrets and pathfinding in a PC tower defense to mobile games shipped on Android and iOS. Here's a selection of my work.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#featured">View projects</a>
+      <a class="btn" href="{{ site.cv_file | relative_url }}">Download CV</a>
+    </div>
+  </div>
+  <img class="hero-photo" src="{{ '/assets/img/franco.jpg' | relative_url }}" alt="Franco Correia">
+</section>
+
+<section class="section" id="featured">
+  <div class="section-head">
+    <h2>Featured projects</h2>
+    <a href="{{ '/projects/' | relative_url }}">See all projects →</a>
+  </div>
+  {% assign featured = site.projects | where: "featured", true | sort: "order" %}
+  <div class="grid">
+    {% for project in featured %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>

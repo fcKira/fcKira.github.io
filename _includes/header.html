@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-name">{{ site.author }}</span>
+      <span class="brand-role">{{ site.tagline }}</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="{{ '/projects/' | relative_url }}"{% if page.url contains '/projects/' %} aria-current="page"{% endif %}>Projects</a>
+      <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
+      <a class="nav-cv" href="{{ site.cv_file | relative_url }}">Download CV</a>
+    </nav>
+  </div>
+</header>

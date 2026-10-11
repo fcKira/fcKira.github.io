@@ -1,0 +1,31 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+description: Games and tools by Franco Correia, gameplay programmer.
+---
+<section class="section" style="padding-top: 56px;">
+  <div class="section-head">
+    <h2>Projects</h2>
+    <p>Professional work, released games and tools.</p>
+  </div>
+  {% assign featured = site.projects | where: "featured", true | sort: "order" %}
+  <div class="grid">
+    {% for project in featured %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+  <div class="section-head">
+    <h2>Earlier projects</h2>
+    <p>Game jams and projects from my studies.</p>
+  </div>
+  {% assign earlier = site.projects | where: "featured", false | sort: "order" %}
+  <div class="grid grid-compact">
+    {% for project in earlier %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>

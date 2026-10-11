@@ -1,0 +1,45 @@
+# ------------------------------------------------------------
+# Configuración del sitio
+# Lo único que tienes que cambiar al subirlo es "url":
+# pon la dirección real de tu GitHub Pages.
+# ------------------------------------------------------------
+
+title: Franco Correia
+tagline: Gameplay Programmer
+description: Gameplay programmer from Buenos Aires. Unity and C#, PC and mobile games.
+url: "https://TU-USUARIO.github.io"
+baseurl: ""
+lang: en
+
+author: Franco Correia
+email: francow.correia@gmail.com
+linkedin: https://www.linkedin.com/in/devfrancocorreia/
+github: ""        # cuando tengas un repo público, pon aquí tu perfil: https://github.com/tu-usuario
+cv_file: /assets/files/Franco_Correia_CV.pdf
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-seo-tag
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /assets/img/og-default.png
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+exclude:
+  - README.md

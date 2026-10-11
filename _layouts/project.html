@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<article class="project">
+  <a class="back" href="{{ '/projects/' | relative_url }}">← All projects</a>
+
+  <header class="project-head">
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.summary }}</p>
+  </header>
+
+  {% if page.youtube %}
+  <div class="media media-video">
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ page.youtube }}" title="{{ page.title }} video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  {% elsif page.cover %}
+  <div class="media"><img src="{{ page.cover | relative_url }}" alt="{{ page.title }}"></div>
+  {% endif %}
+
+  <dl class="facts">
+    {% if page.role %}<div><dt>Role</dt><dd>{{ page.role }}</dd></div>{% endif %}
+    {% if page.team %}<div><dt>Team</dt><dd>{{ page.team }}</dd></div>{% endif %}
+    {% if page.platform %}<div><dt>Platform</dt><dd>{{ page.platform }}</dd></div>{% endif %}
+    {% if page.engine %}<div><dt>Engine</dt><dd>{{ page.engine }}</dd></div>{% endif %}
+    {% if page.year %}<div><dt>Year</dt><dd>{{ page.year }}</dd></div>{% endif %}
+  </dl>
+
+  {% if page.links %}
+  <p class="links">
+    {% for link in page.links %}<a class="btn{% if forloop.first %} btn-primary{% endif %}" href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
+  </p>
+  {% endif %}
+
+  {% if page.nda %}
+  <p class="note">Developed under an NDA, so gameplay footage and source code can't be shared.</p>
+  {% endif %}
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  {% if page.gallery %}
+  <div class="gallery">
+    {% for img in page.gallery %}
+    <img src="{{ img | relative_url }}" alt="{{ page.title }} screenshot" loading="lazy">
+    {% endfor %}
+  </div>
+  {% endif %}
+</article>

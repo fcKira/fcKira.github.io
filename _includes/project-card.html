@@ -1,0 +1,15 @@
+{% assign p = include.project %}
+<a class="card" href="{{ p.url | relative_url }}">
+  <div class="card-media">
+    {% if p.cover %}
+    <img src="{{ p.cover | relative_url }}" alt="" loading="lazy">
+    {% else %}
+    <div class="card-fallback" aria-hidden="true"><span>{{ p.title | slice: 0 }}</span></div>
+    {% endif %}
+  </div>
+  <div class="card-body">
+    <h3 class="card-title">{{ p.title }}</h3>
+    <p class="card-meta">{{ p.platform }}{% if p.engine %} · {{ p.engine }}{% endif %}</p>
+    <p class="card-summary">{{ p.summary }}</p>
+  </div>
+</a>
