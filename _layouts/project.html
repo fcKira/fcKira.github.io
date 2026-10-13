@@ -9,12 +9,50 @@ layout: default
     <p class="lead">{{ page.summary }}</p>
   </header>
 
-  {% if page.youtube %}
-  <div class="media media-video">
-    <iframe src="https://www.youtube-nocookie.com/embed/{{ page.youtube }}" title="{{ page.title }} video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  {% comment %}
+    Galería estilo Steam: primero el video (si hay), después la portada y las capturas de "gallery".
+  {% endcomment %}
+  {% assign shots = page.gallery | size %}
+  {% assign total = shots %}
+  {% if page.youtube %}{% assign total = total | plus: 1 %}{% endif %}
+  {% if page.cover %}{% assign total = total | plus: 1 %}{% endif %}
+  {% if page.cover %}{% assign first_image = page.cover %}{% else %}{% assign first_image = page.gallery | first %}{% endif %}
+
+  {% if total > 0 %}
+  <div class="viewer" data-viewer>
+    <div class="viewer-stage">
+      {% if page.youtube %}
+      <iframe class="viewer-video" src="https://www.youtube-nocookie.com/embed/{{ page.youtube }}" data-src="https://www.youtube-nocookie.com/embed/{{ page.youtube }}" title="{{ page.title }} video" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      {% endif %}
+      {% if first_image %}
+      <a class="viewer-image-link" href="{{ first_image | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size image"{% if page.youtube %} hidden{% endif %}>
+        <img class="viewer-image" src="{{ first_image | relative_url }}" alt="{{ page.title }}">
+      </a>
+      {% endif %}
+    </div>
+
+    {% if total > 1 %}
+    <div class="viewer-thumbs">
+      {% if page.youtube %}
+      <a class="thumb is-active" href="https://www.youtube.com/watch?v={{ page.youtube }}" data-type="video" aria-label="Play video" aria-current="true">
+        <img src="https://img.youtube.com/vi/{{ page.youtube }}/mqdefault.jpg" alt="" loading="lazy" onerror="this.remove()">
+        <span class="thumb-play" aria-hidden="true"></span>
+      </a>
+      {% endif %}
+      {% if page.cover %}
+      <a class="thumb{% unless page.youtube %} is-active{% endunless %}" href="{{ page.cover | relative_url }}" data-type="image" aria-label="{{ page.title }} cover"{% unless page.youtube %} aria-current="true"{% endunless %}>
+        <img src="{{ page.cover | relative_url }}" alt="" loading="lazy">
+      </a>
+      {% endif %}
+      {% for img in page.gallery %}
+      <a class="thumb{% if forloop.first %}{% unless page.youtube or page.cover %} is-active{% endunless %}{% endif %}" href="{{ img | relative_url }}" data-type="image" aria-label="Screenshot {{ forloop.index }}">
+        <img src="{{ img | relative_url }}" alt="" loading="lazy">
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
-  {% elsif page.cover %}
-  <div class="media"><img src="{{ page.cover | relative_url }}" alt="{{ page.title }}"></div>
+  <script src="{{ '/assets/js/gallery.js' | relative_url }}" defer></script>
   {% endif %}
 
   <dl class="facts">
@@ -38,12 +76,4 @@ layout: default
   <div class="prose">
     {{ content }}
   </div>
-
-  {% if page.gallery %}
-  <div class="gallery">
-    {% for img in page.gallery %}
-    <img src="{{ img | relative_url }}" alt="{{ page.title }} screenshot" loading="lazy">
-    {% endfor %}
-  </div>
-  {% endif %}
 </article>

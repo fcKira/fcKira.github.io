@@ -230,8 +230,65 @@ h1, h2, h3 {
   background: var(--surface);
   margin-bottom: 28px;
 }
-.media-video { aspect-ratio: 16 / 9; }
-.media-video iframe { width: 100%; height: 100%; border: 0; display: block; }
+[hidden] { display: none !important; }
+
+/* Galería estilo Steam */
+.viewer { margin-bottom: 28px; }
+.viewer-stage {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #0B0A10;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.viewer-video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.viewer-image-link { position: absolute; inset: 0; display: block; cursor: zoom-in; }
+.viewer-image { width: 100%; height: 100%; object-fit: contain; }
+.viewer-thumbs {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+  padding: 6px 6px 10px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scrollbar-color: var(--surface-2) transparent;
+}
+.thumb {
+  position: relative;
+  flex: 0 0 136px;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  background: var(--surface-2);
+  opacity: 0.6;
+  scroll-snap-align: start;
+  transition: opacity .15s ease, border-color .15s ease;
+}
+.thumb img { width: 100%; height: 100%; object-fit: cover; }
+.thumb:hover { opacity: 0.9; }
+.thumb:focus-visible { outline-offset: 2px; opacity: 1; }
+.thumb.is-active { opacity: 1; border-color: var(--accent); }
+.thumb-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 34px;
+  height: 34px;
+  margin: -17px 0 0 -17px;
+  border-radius: 50%;
+  background: rgba(18, 16, 25, 0.75);
+}
+.thumb-play::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  border-style: solid;
+  border-width: 7px 0 7px 11px;
+  border-color: transparent transparent transparent var(--text);
+}
 
 .facts {
   display: grid;
@@ -274,13 +331,6 @@ h1, h2, h3 {
   font-size: 0.9em;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 12px;
-  margin-top: 32px;
-}
-.gallery img { border-radius: 10px; border: 1px solid var(--border); width: 100%; }
 
 /* ---------- About ---------- */
 .about { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 48px; padding: 56px 0 72px; align-items: start; }
@@ -325,9 +375,10 @@ h1, h2, h3 {
   .about-photo { width: 140px; }
   .timeline li { grid-template-columns: 1fr; gap: 2px; }
   .nav a { padding: 10px 10px; }
+  .thumb { flex-basis: 108px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .card { transition: none; }
+  .card, .thumb { transition: none; }
   .card:hover { transform: none; }
 }

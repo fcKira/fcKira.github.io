@@ -37,7 +37,7 @@ year: 2026
 youtube: dQw4w9WgXcQ    # opcional: solo el ID del video, lo que va después de "v=" en el link
 cover: /assets/img/projects/mi-juego.png   # opcional: portada de la tarjeta y de la página
 image: /assets/img/projects/mi-juego.png   # opcional: imagen al compartir el link (pon la misma)
-gallery:                # opcional: capturas al final de la página
+gallery:                # opcional: capturas de la galería (se muestran después del video y la portada)
   - /assets/img/projects/mi-juego-1.png
   - /assets/img/projects/mi-juego-2.png
 links:                  # opcional: botones (el primero sale resaltado)
@@ -57,7 +57,9 @@ Cualquier campo que no uses, bórralo o déjalo con `#` adelante (así queda com
 - Sube las imágenes a `assets/img/projects/`.
 - Usa imágenes apaisadas (16:9), por ejemplo de 1280 × 720, para que las tarjetas queden parejas.
 - Mejor en `.jpg` o `.webp` y de menos de 500 KB cada una, así el sitio carga rápido.
-- Mientras un proyecto no tenga `cover`, la tarjeta muestra un diseño de reemplazo con el nombre.
+- Mientras un proyecto no tenga `cover`, la tarjeta muestra un diseño de reemplazo con la inicial.
+- La galería de cada proyecto muestra, en este orden: el video (`youtube`), la portada (`cover`) y las capturas (`gallery`). Al tocar una miniatura se ve en grande, y al tocar la imagen grande se abre en tamaño completo.
+- Dentro de un mismo proyecto, usa capturas de las mismas dimensiones: 1280 × 720 si son de PC, o unos 720 px de ancho si son verticales de celular.
 
 ## Cambiar otras cosas
 
