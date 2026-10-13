@@ -10,8 +10,8 @@ year: 2026
 links:
   - label: Unity Asset Store
     url: https://assetstore.unity.com/packages/tools/utilities/barrier-pattern-363232
-cover: /assets/img/projects/BarrierPattern_Cover.jpg
-image: /assets/img/projects/BarrierPattern_Cover.jpg
+cover: /assets/img/projects/BarrierPattern/BarrierPattern_Cover.jpg
+image: /assets/img/projects/BarrierPattern/BarrierPattern_Cover.jpg
 ---
 
 My first tool published on the Unity Asset Store. It comes from a design pattern I'm using in my next mobile game.

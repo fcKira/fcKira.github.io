@@ -11,8 +11,8 @@ year: 2023
 links:
   - label: Official site
     url: https://aistriker.gaxos.com/
-cover: /assets/img/projects/SpaceStrikerAI_Cover.jpg
-image: /assets/img/projects/SpaceStrikerAI_Cover.jpg
+cover: /assets/img/projects/SpaceStrikerAI/SpaceStrikerAI_Cover.jpg
+image: /assets/img/projects/SpaceStrikerAI/SpaceStrikerAI_Cover.jpg
 ---
 
 My first project at Gaxos.ai, which I joined from the start of development. Players customize their ships, battle aliens and unlock upgrades, and can mint their creations as NFTs.
