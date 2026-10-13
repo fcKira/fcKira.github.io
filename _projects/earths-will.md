@@ -8,7 +8,13 @@ team: 2 people
 platform: PC
 engine: Unity · C#
 year: 2021
-# cover: /assets/img/projects/earths-will.png
+cover: /assets/img/projects/EarthsWill/EarthsWill_Cover.jpg
+image: /assets/img/projects/EarthsWill/EarthsWill_Cover.jpg
+gallery:
+  - /assets/img/projects/EarthsWill/1.jpg
+  - /assets/img/projects/EarthsWill/2.jpg
+  - /assets/img/projects/EarthsWill/3.jpg
+  - /assets/img/projects/EarthsWill/4.jpg
 ---
 
 Made with Maximiliano Garcia for a level design test. The player collects coins and jumps across platforms to cross the level and save the village from mutant enemies.
