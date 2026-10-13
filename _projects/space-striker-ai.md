@@ -17,7 +17,6 @@ gallery:
   - /assets/img/projects/SpaceStrikerAI/1.jpg
   - /assets/img/projects/SpaceStrikerAI/2.jpg
   - /assets/img/projects/SpaceStrikerAI/3.jpg
-  - /assets/img/projects/SpaceStrikerAI/4.jpg
 ---
 
 My first project at Gaxos.ai, which I joined from the start of development. Players customize their ships, battle aliens and unlock upgrades, and can mint their creations as NFTs.
