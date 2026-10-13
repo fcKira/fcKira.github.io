@@ -14,8 +14,8 @@ links:
     url: https://pickupgames.github.io/
 # year: 2026
 # youtube: ID_DEL_VIDEO
-# cover: /assets/img/projects/gravity-shift.png
-# image: /assets/img/projects/gravity-shift.png
+cover: /assets/img/projects/GravityShift_Cover.jpg
+image: /assets/img/projects/GravityShift_Cover.jpg
 ---
 
 Your ship flies at a constant speed. You can boost and tilt, but the real steering comes from the pull of nearby planets: get too close and you crash, drift too far and you're lost. Every level is a short puzzle in motion.
