@@ -9,8 +9,8 @@ platform: Android · iOS
 engine: Unity · C#
 year: 2024
 links:
-  - label: Official site
-    url: https://jigsaw.gaxos.com/
+  - label: Google Play
+    url: https://play.google.com/store/apps/details?id=com.Gaxos.Jigsaw
 cover: /assets/img/projects/JigsawPuzzleAI/JigsawPuzzleAI_Cover.jpg
 image: /assets/img/projects/JigsawPuzzleAI/JigsawPuzzleAI_Cover.jpg
 ---
