@@ -9,8 +9,8 @@ platform: Mobile
 engine: Unity · C#
 year: 2023
 links:
-  - label: Official site
-    url: https://aistriker.gaxos.com/
+  - label: Google Play
+    url: https://play.google.com/store/apps/details?id=com.ntfgco.aispaceshooter
 cover: /assets/img/projects/SpaceStrikerAI/SpaceStrikerAI_Cover.jpg
 image: /assets/img/projects/SpaceStrikerAI/SpaceStrikerAI_Cover.jpg
 ---
