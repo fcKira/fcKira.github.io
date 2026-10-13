@@ -11,8 +11,8 @@ year: 2024
 links:
   - label: Official site
     url: https://jigsaw.gaxos.com/
-# cover: /assets/img/projects/jigsaw-puzzle-ai.png
-# image: /assets/img/projects/jigsaw-puzzle-ai.png
+cover: /assets/img/projects/JigsawPuzzleAI_Cover.jpg
+image: /assets/img/projects/JigsawPuzzleAI_Cover.jpg
 ---
 
 After shipping Space Striker AI, I led Jigsaw Puzzle AI from its first prototype to its release on Android and iOS. Besides a library of ready-made pictures, players can describe anything they imagine and get a new puzzle generated for them.
