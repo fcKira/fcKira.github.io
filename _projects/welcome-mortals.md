@@ -9,8 +9,8 @@ platform: PC
 engine: Unity · C#
 year: 2024–2025
 nda: true
-# cover: /assets/img/projects/welcome-mortals.png
-# image: /assets/img/projects/welcome-mortals.png
+cover: /assets/img/projects/WelcomeMortals_Cover.jpg
+image: /assets/img/projects/WelcomeMortals_Cover.jpg
 ---
 
 Each run starts with a house that has one unlocked room and several locked ones. As rooms unlock and connect, the enemies' path updates and opens alternative routes, which raises the difficulty. Defeated enemies drop souls, and the player spends them on spirits: upgrades that grant buffs, new units and special abilities.
