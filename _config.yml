@@ -14,7 +14,7 @@ lang: en
 author: Franco Correia
 email: francow.correia@gmail.com
 linkedin: https://www.linkedin.com/in/devfrancocorreia/
-github: ""        # cuando tengas un repo público, pon aquí tu perfil: https://github.com/tu-usuario
+github: "https://github.com/fcKira"
 cv_file: /assets/files/Franco_Correia_CV.pdf
 
 markdown: kramdown
