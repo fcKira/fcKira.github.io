@@ -12,6 +12,11 @@ links:
     url: https://assetstore.unity.com/packages/tools/utilities/barrier-pattern-363232
 cover: /assets/img/projects/BarrierPattern/BarrierPattern_Cover.jpg
 image: /assets/img/projects/BarrierPattern/BarrierPattern_Cover.jpg
+gallery:
+  - /assets/img/projects/BarrierPattern/1.webp
+  - /assets/img/projects/BarrierPattern/2.webp
+  - /assets/img/projects/BarrierPattern/3.webp
+  - /assets/img/projects/BarrierPattern/4.webp
 ---
 
 My first tool published on the Unity Asset Store. It comes from a design pattern I'm using in my next mobile game.

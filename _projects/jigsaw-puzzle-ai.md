@@ -13,6 +13,11 @@ links:
     url: https://play.google.com/store/apps/details?id=com.Gaxos.Jigsaw
 cover: /assets/img/projects/JigsawPuzzleAI/JigsawPuzzleAI_Cover.jpg
 image: /assets/img/projects/JigsawPuzzleAI/JigsawPuzzleAI_Cover.jpg
+gallery:
+  - /assets/img/projects/JigsawPuzzleAI/1.jpg
+  - /assets/img/projects/JigsawPuzzleAI/2.jpg
+  - /assets/img/projects/JigsawPuzzleAI/3.jpg
+  - /assets/img/projects/JigsawPuzzleAI/4.jpg
 ---
 
 After shipping Space Striker AI, I led Jigsaw Puzzle AI from its first prototype to its release on Android and iOS. Besides a library of ready-made pictures, players can describe anything they imagine and get a new puzzle generated for them.

@@ -16,6 +16,11 @@ links:
 # youtube: ID_DEL_VIDEO
 cover: /assets/img/projects/GravityShift/GravityShift_Cover.jpg
 image: /assets/img/projects/GravityShift/GravityShift_Cover.jpg
+gallery:
+  - /assets/img/projects/GravityShift/1.webp
+  - /assets/img/projects/GravityShift/2.webp
+  - /assets/img/projects/GravityShift/3.webp
+  - /assets/img/projects/GravityShift/4.webp
 ---
 
 Your ship flies at a constant speed. You can boost and tilt, but the real steering comes from the pull of nearby planets: get too close and you crash, drift too far and you're lost. Every level is a short puzzle in motion.
