@@ -10,7 +10,11 @@ year: 2019
 links:
   - label: Play on itch.io
     url: https://zathmell.itch.io/mr-match-love-is-in-the-air
-# cover: /assets/img/projects/mr-match.png
+cover: /assets/img/projects/MrMatch/MrMatch_Cover.jpg
+image: /assets/img/projects/MrMatch/MrMatch_Cover.jpg
+gallery:
+  - /assets/img/projects/MrMatch/1.jpg
+  - /assets/img/projects/MrMatch/2.jpg
 ---
 
 The jam's theme was "Connection". You play an old, eccentric cupid who shoots love bullets at pedestrians to make couples and earn points.
