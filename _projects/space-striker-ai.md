@@ -5,12 +5,12 @@ featured: true
 order: 3
 role: Gameplay programmer
 team: Gaxos.ai · 3 programmers and a team lead
-platform: Mobile
+platform: Android · iOS
 engine: Unity · C#
 year: 2023
 links:
-  - label: Google Play
-    url: https://play.google.com/store/apps/details?id=com.ntfgco.aispaceshooter
+  - label: Official site
+    url: https://gamefoundry.ai/#games
 cover: /assets/img/projects/SpaceStrikerAI/SpaceStrikerAI_Cover.jpg
 image: /assets/img/projects/SpaceStrikerAI/SpaceStrikerAI_Cover.jpg
 gallery:
@@ -23,6 +23,7 @@ My first project at Gaxos.ai, which I joined from the start of development. Play
 
 ## What I built
 
-- **Gameplay features** and the moment-to-moment shooting experience.
-- **Feature implementation** across the game, from early prototypes to release.
-- **Bug fixing** and polish through launch.
+- **Object pooling** for enemies and particle effects, to keep performance stable on mobile during heavy waves.
+- **Modular, reusable components** that the team used to build new gameplay features faster throughout development.
+- **Gameplay features** for the moment-to-moment shooting experience.
+- **Bug fixing** and polish from the first prototypes through launch.

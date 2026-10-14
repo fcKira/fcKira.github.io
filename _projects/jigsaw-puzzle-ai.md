@@ -9,8 +9,8 @@ platform: Android · iOS
 engine: Unity · C#
 year: 2024
 links:
-  - label: Google Play
-    url: https://play.google.com/store/apps/details?id=com.Gaxos.Jigsaw
+  - label: Official site
+    url: https://gamefoundry.ai/#games
 cover: /assets/img/projects/JigsawPuzzleAI/JigsawPuzzleAI_Cover.jpg
 image: /assets/img/projects/JigsawPuzzleAI/JigsawPuzzleAI_Cover.jpg
 gallery:
@@ -20,11 +20,14 @@ gallery:
   - /assets/img/projects/JigsawPuzzleAI/4.jpg
 ---
 
-After shipping Space Striker AI, I led Jigsaw Puzzle AI from its first prototype to its release on Android and iOS. Besides a library of ready-made pictures, players can describe anything they imagine and get a new puzzle generated for them.
+After shipping Space Striker AI, I led Jigsaw Puzzle AI as its only programmer, from the first prototype to its release on Android and iOS. Besides a library of ready-made pictures, players can describe anything they imagine and get a new puzzle generated for them.
 
 ## What I built
 
-- **Puzzle gameplay** and the full user experience across menus.
-- **AI image generation** with Stability AI, so players can create puzzles from their own prompts.
-- **NFT minting** of the generated pictures.
-- **UI integration** of the screens designed by the concept art team.
+- **Puzzle core**: adapted an existing puzzle system to the game's needs and extended it with new gameplay features, such as hints and background customization.
+- **Game modes**: several ways to play built on top of the same puzzle core.
+- **AI puzzle generation** with Stability AI: sending the request, handling the wait and turning the generated image into a playable puzzle.
+- **Accounts and wallets**: Google and Apple sign-in, plus MetaMask connection.
+- **Save system** for players' progress.
+- **Full game dressing**: integrated all the UI and art from the concept art team.
+- **Backend integration**: implemented Gaxos' in-house frameworks for account linking, NFT minting, Stability AI calls and database access.

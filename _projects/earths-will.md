@@ -17,4 +17,11 @@ gallery:
   - /assets/img/projects/EarthsWill/4.jpg
 ---
 
-Made with Maximiliano Garcia for a level design test. The player collects coins and jumps across platforms to cross the level and save the village from mutant enemies.
+Made with an artist for a level design exam. The player collects coins and jumps across platforms to cross the level and save the village from mutant enemies.
+
+## What I built
+
+- **Enemy AI**: two basic enemy types, melee and ranged, plus a boss that combines both attack styles.
+- **Camera cues**: camera transitions that show the player key areas of the level, guiding them without extra UI.
+- **NPC dialogue system**.
+- **Linear level progression** across the stage.

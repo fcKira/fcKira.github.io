@@ -15,12 +15,12 @@ gallery:
   - /assets/img/projects/TalesOfArrows/3.jpg
 ---
 
-My first game in Unreal Engine 4, made for an exam during my studies. Most of the game is written in C++, with Blueprints for the animation state machine and the UI.
+My first game in Unreal Engine 4, made for an exam during my studies: five levels plus a tutorial, ending in a boss fight. Most of the game is written in C++, with Blueprints for the animation state machine and the UI.
 
-## Requirements
+## What I built
 
-- Main menu
-- Five playable levels plus a tutorial
-- Two power-ups and two debuffs
-- At least three enemies or obstacles
-- A final boss
+- **Cursor-driven bow aiming**: the character's aim follows a vertical animation blend based on where the hidden cursor sits relative to the character, so the bow always points where the player intends.
+- **2.5D side-scrolling movement**.
+- **Buff and debuff system** for power-ups and negative effects.
+- **Two enemy types** and **destructible obstacles**.
+- **Boss with two attack patterns**: one of them leaves it open to hits, teaching the player when to strike.
