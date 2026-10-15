@@ -9,6 +9,7 @@ engine: Unreal Engine 4 · C++
 year: 2021
 cover: /assets/img/projects/TalesOfArrows/TalesOfArrow_Cover.jpg
 image: /assets/img/projects/TalesOfArrows/TalesOfArrow_Cover.jpg
+youtube: dGzAeiO92cU
 gallery:
   - /assets/img/projects/TalesOfArrows/1.jpg
   - /assets/img/projects/TalesOfArrows/2.jpg

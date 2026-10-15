@@ -10,6 +10,7 @@ engine: Unity · C#
 year: 2021
 cover: /assets/img/projects/EarthsWill/EarthsWill_Cover.jpg
 image: /assets/img/projects/EarthsWill/EarthsWill_Cover.jpg
+youtube: tF1_RuusmYQ
 gallery:
   - /assets/img/projects/EarthsWill/1.jpg
   - /assets/img/projects/EarthsWill/2.jpg
