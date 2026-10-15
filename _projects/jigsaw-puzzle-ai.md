@@ -3,7 +3,7 @@ title: Jigsaw Puzzle AI
 summary: A mobile jigsaw game where players can turn any idea into a custom puzzle with AI image generation.
 featured: true
 order: 2
-role: Project lead and sole programmer
+role: Project lead<br>Sole programmer
 team: Gaxos.ai
 platform: Android · iOS
 engine: Unity · C#

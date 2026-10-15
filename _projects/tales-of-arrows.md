@@ -5,7 +5,7 @@ featured: false
 order: 1
 role: Solo developer
 platform: PC
-engine: Unreal Engine 4 · C++
+engine: Unreal Engine 4<br>C++
 year: 2021
 youtube: dGzAeiO92cU
 cover: /assets/img/projects/TalesOfArrows/TalesOfArrow_Cover.jpg

@@ -4,7 +4,7 @@ summary: An arcade space shooter for mobile with ship customization, upgrades an
 featured: true
 order: 3
 role: Gameplay programmer
-team: Gaxos.ai · 3 programmers and a team lead
+team: Gaxos.ai<br>3 programmers and a team lead
 platform: Android · iOS
 engine: Unity · C#
 year: 2023

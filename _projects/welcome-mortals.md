@@ -4,7 +4,7 @@ summary: A PC tower defense where the enemy path is generated procedurally and c
 featured: true
 order: 1
 role: Gameplay programmer
-team: 5 people · 2 programmers
+team: 5 people<br>2 programmers
 platform: PC
 engine: Unity · C#
 year: 2024–2025

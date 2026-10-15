@@ -4,7 +4,7 @@ summary: An arcade space game where planetary gravity is your steering wheel.
 featured: true
 order: 4
 role: Solo developer
-team: Pick Up Games (my indie label)
+team: Pick Up Games<br>(my indie label)
 platform: Android
 engine: Unity · C#
 year: 2026
