@@ -11,6 +11,7 @@ year: 2024
 links:
   - label: Official site
     url: https://gamefoundry.ai/#games
+youtube: FAHvGruWVbc
 cover: /assets/img/projects/JigsawPuzzleAI/JigsawPuzzleAI_Cover.jpg
 image: /assets/img/projects/JigsawPuzzleAI/JigsawPuzzleAI_Cover.jpg
 gallery:
