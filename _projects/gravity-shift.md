@@ -13,7 +13,7 @@ links:
     url: https://play.google.com/store/apps/details?id=com.pickupgames.gravityshift
   - label: Pick Up Games
     url: https://pickupgames.github.io/
-# youtube: ID_DEL_VIDEO
+youtube: xUxBS4uVPqE
 cover: /assets/img/projects/GravityShift/GravityShift_Cover.jpg
 image: /assets/img/projects/GravityShift/GravityShift_Cover.jpg
 gallery:
